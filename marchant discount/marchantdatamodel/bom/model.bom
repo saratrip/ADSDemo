@@ -1,0 +1,26 @@
+
+package cp4admin.sampleproj.marchant_discount.marchantdatamodel;
+
+
+public class Customerretailpurchasedata
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "customerretailpurchasedata"
+        property "de.generated" "true"
+{
+    public double discount
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "discount"
+                property update "true";
+    public double purchase_amount
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "purchase_amount"
+                property update "true";
+    public Customerretailpurchasedata(double discount, double purchase_amount)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Customerretailpurchasedata()
+                property "dataio.default" "true";
+}
+
